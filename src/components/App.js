@@ -15,7 +15,7 @@ class App extends Component {
 				<button id='click' onClick={this.addText = ()=>{
 	        	this.setState({value:"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"});
 	            }}>Click me !</button>
-				<p id='para'>{this.state.value}</p>
+				{this.state.value !== '' ? <p id='para'>{this.state.value}</p> : null}
     		</div>
     	);
     }
